@@ -1,0 +1,349 @@
+<div class="container">
+  <header
+    class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+  >
+    <a
+      href="/"
+      class="d-flex align-items-center mb-3 mb-md-8 me-md-auto link-body-emphasis text-decoration-none"
+    >
+      <span class="fs-4">{{ nama }} {{ nim }}}</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="#" class="nav-link active" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+  </header>
+</div>
+
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+  <button
+    class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    aria-label="Toggle theme (auto)"
+  >
+    <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+      <use href="#circle-half"></use>
+    </svg>
+    <span class="visually-hidden" id="bd-theme-text">oi lahhhhhhhh</span>
+  </button>
+  <ul
+    class="dropdown-menu dropdown-menu-end shadow"
+    aria-labelledby="bd-theme-text"
+  >
+    <li>
+      <button
+        type="button"
+        class="dropdown-item d-flex align-items-center"
+        data-bs-theme-value="light"
+        aria-pressed="false"
+      >
+        <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+          <use href="#sun-fill"></use>
+        </svg>
+        Light
+        <svg class="bi ms-auto d-none" width="1em" height="1em">
+          <use href="#check2"></use>
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button
+        type="button"
+        class="dropdown-item d-flex align-items-center"
+        data-bs-theme-value="dark"
+        aria-pressed="false"
+      >
+        <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+          <use href="#moon-stars-fill"></use>
+        </svg>
+        Dark
+        <svg class="bi ms-auto d-none" width="1em" height="1em">
+          <use href="#check2"></use>
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button
+        type="button"
+        class="dropdown-item d-flex align-items-center active"
+        data-bs-theme-value="auto"
+        aria-pressed="true"
+      >
+        <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        Auto
+        <svg class="bi ms-auto d-none" width="1em" height="1em">
+          <use href="#check2"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="row mx-2">
+    <div class="col-12">
+      <button class="btn btn-success m-1">
+        <i class="fa fa-whatsapp"></i>
+        Kirim WhatsApp
+      </button>
+      <button class="btn btn-primary m-1">
+        <i class="fa fa-plus"></i>
+        Record Baru
+      </button>
+      <button class="btn btn-danger m-1">
+        <i class="fa fa-trash"></i>
+        Hapus Record
+      </button>
+      <button class="btn btn-warning m-1">
+        <i class="fa fa-edit"></i>
+        Ubah Record
+      </button>
+      <button class="btn btn-info mx-1">
+        <i class="fa fa-search"></i>
+        Pencarian
+      </button>
+      <button class="btn btn-default mx-1">
+        <i class="fa fa-times"></i>
+        Batal
+      </button>
+    </div>
+    <div class="col-12">
+      <input type="text" class="form-control m-1" placeholder="Ini TxtBox" />
+    </div>
+    <div class="col-12">
+      <select class="form-control m-1">
+        <option value="SI/SI">SI/SI</option>
+        <option value="TI/TI">TI/TI</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5"
+  tabindex="-1"
+  role="dialog"
+  id="modalSheet"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-bottom-0">
+        <h1 class="modal-title fs-5">Modal title</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body py-0">
+        <p>
+          This is a modal sheet, a variation of the modal that docs itself to
+          the bottom of the viewport like the newer share sheets in iOS.
+        </p>
+      </div>
+      <div
+        class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0"
+      >
+        <button type="button" class="btn btn-lg btn-primary">
+          Save changes
+        </button>
+        <button
+          type="button"
+          class="btn btn-lg btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center"
+>
+  <div
+    class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px"
+    data-bs-theme="light"
+  >
+    <form class="p-2 mb-2 bg-body-tertiary border-bottom">
+      <input
+        type="search"
+        class="form-control"
+        autocomplete="false"
+        placeholder="Type to filter..."
+      />
+    </form>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-success rounded-circle p-1"></span>
+          Action
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+          Another action
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+          Something else here
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-info rounded-circle p-1"></span>
+          Separated link
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    class="dropdown-menu d-block position-static border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px"
+    data-bs-theme="dark"
+  >
+    <form class="p-2 mb-2 bg-dark border-bottom border-dark">
+      <input
+        type="search"
+        class="form-control bg-dark"
+        autocomplete="false"
+        placeholder="Type to filter..."
+      />
+    </form>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-success rounded-circle p-1"></span>
+          Action
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+          Another action
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+          Something else here
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+          <span class="d-inline-block bg-info rounded-circle p-1"></span>
+          Separated link
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Nim</th>
+      <th scope="col">Kelas</th>
+      <th scope="col">makul</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>weng</td>
+      <td>212102398</td>
+      <td>C1</td>
+      <td>moblie</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>biwen</td>
+      <td>21120999</td>
+      <td>C1</td>
+      <td>Mobile</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>febbb</td>
+      <td>21112889</td>
+      <td>C1</td>
+      <td>moblie</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Nim</th>
+      <th scope="col">Kelas</th>
+      <th scope="col">makul</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>weng</td>
+      <td>212102398</td>
+      <td>C1</td>
+      <td>moblie</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>biwen</td>
+      <td>21120999</td>
+      <td>C1</td>
+      <td>Mobile</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>febbb</td>
+      <td>21112889</td>
+      <td>C1</td>
+      <td>moblie</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-primary">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-primary">Features</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-primary">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-primary">FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-primary">About</a>
+      </li>
+    </ul>
+    <p class="text-center text-body-secondary">Weng 2023 project</p>
+  </footer>
+</div>
